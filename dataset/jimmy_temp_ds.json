@@ -1,0 +1,33 @@
+{
+	"name": "jimmy_temp_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jimmy_ls_adf",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "staging_cleanup.csv",
+				"container": "jimmy-temp"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "temp_id",
+				"type": "String"
+			},
+			{
+				"name": "note",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

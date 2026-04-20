@@ -1,0 +1,49 @@
+{
+	"name": "jimmy_raw_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "jimmy_ls_adf",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "tripdata_daily.csv",
+				"container": "jimmy-raw"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "trip_id",
+				"type": "String"
+			},
+			{
+				"name": "pickup_zone",
+				"type": "String"
+			},
+			{
+				"name": "dropoff_zone",
+				"type": "String"
+			},
+			{
+				"name": "trip_date",
+				"type": "String"
+			},
+			{
+				"name": "fare",
+				"type": "String"
+			},
+			{
+				"name": "passenger_count",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

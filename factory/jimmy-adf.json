@@ -1,0 +1,9 @@
+{
+	"name": "jimmy-adf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0652f258-ec32-4882-9eff-1c0cbe30f08f",
+		"tenantId": "88404777-f24b-4e1c-ada1-bde9cda22754"
+	}
+}
