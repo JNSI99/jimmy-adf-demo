@@ -43,7 +43,6 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobStorageLocation",
-						"fileName": "tripdata_curated_backup",
 						"folderPath": "backup",
 						"container": "jimmy-curated"
 					},
